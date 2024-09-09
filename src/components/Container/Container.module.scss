@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #EAF4FF;
+    background-image: url(../../assets/32.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    // background-size: 300px 100px;
+    main {
+        padding: var(--padding-sm) var(--padding-md);
+        max-width: 1600px;
+        @media screen and (min-width: 1600px) {
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 300px) {
+            padding: var(--padding-xs);
+        }
+    }
+}

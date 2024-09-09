@@ -1,0 +1,206 @@
+.navbar_container {
+    --color_nav_bg: #E4F2FF;
+    --color_nav_txt:  #727272;;
+    --color_nav_ctg: #727272;;
+    --color_nav_active: #727272;;
+    --color_nav_not_active: #727272;;
+    --color_nav_active_bg: #D4EAFF;
+    --nav_width: 14rem;
+
+    background: var(--color_nav_bg);
+    border-right: 1px solid #C9D9E8;
+    // box-shadow: 2002px 200px 200px 155px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+
+    padding: var(--padding-md) var(--padding-sm);
+    transition: transform 300ms ease-in-out;
+
+    @media screen and (max-width: 1024px) {
+        transform: translateX(-100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 12;
+    }
+
+    @media screen and (max-width: 18rem) {
+        width: 100vw;
+    }
+}
+
+.navbar_mobile_active {
+    @media screen and (max-width: 1024px) {
+        transform: translateX(0);
+    }
+}
+
+nav {
+    position: relative;
+    width: 16em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    transition: width linear 0.3s;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.logo {
+    padding: 0 0.35rem;
+    // font-size: 2.2rem;
+    display: flex;
+    object-fit: contain;
+    position: absolute;
+    z-index: 999;
+    .logo_icon {
+        color: var(--color_nav_active);
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+
+    .mobile_cancel_icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .logo_icon {
+            display: block;
+        }
+
+        .mobile_cancel_icon {
+            display: block;
+            cursor: pointer;
+            font-size: 2.2rem;
+            padding: 0.2rem;
+            color: var(--color_nav_active);
+        }
+    }
+}
+
+.menu_container {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.categories {
+    color: var(--color_nav_txt);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: var(--margin-xxs);
+
+    svg {
+        font-size: 1rem;
+    }
+}
+
+.second_category {
+    margin-top: 3rem;
+}
+
+.li_navlink a {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: var(--color_nav_ctg);
+    transition: all ease-in-out 0.2s;
+
+   
+
+    .description {
+        margin-left: 0.5rem;
+        font-weight: 400;
+        transition: opacity 200ms ease;
+    }
+
+    svg {
+        font-size: 1.5rem;
+        color: var(--color_nav_not_active);
+        flex-shrink: 0;
+    }
+
+    &:hover {
+        background: var(--color_nav_active_bg);
+    }
+
+    &:hover svg {
+        color: var(--color_nav_active);
+    }
+}
+
+.li_navlink .active {
+    background: var(--color_nav_active_bg);
+      background-image: url(../../assets/arrowright.svg);
+      background-repeat: no-repeat;
+      background-position:  90% 50%;
+      background-size: 17px;
+
+    svg {
+        color: var(--color_nav_active);
+    }
+}
+
+.btn_logout {
+    margin-top: auto;
+    display: flex;
+    position: fixed;
+ top: 25%;
+    z-index: 7;
+    justify-content: flex-end;
+    transition: all ease-in-out 200ms;
+    padding: 0.5rem 0.75rem 0 0.75rem;
+
+    svg {
+        font-size: 1.5rem;
+        color: var(--color_nav_active);
+        cursor: pointer;
+        transform: scaleX(-1);
+    }
+}
+
+.mobile_nav_background_active {
+    width: 0;
+    height: 100vh;
+    transition: all ease-out 500ms;
+    transition-delay: 300ms;
+    cursor: pointer;
+    @media screen and (max-width: 1024px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: calc(var(--nav_width) + var(--padding-md));
+        width: calc(100vw - var(--nav_width) - var(--padding-md));
+        background: rgba(0, 0, 0, 0.185);
+        z-index: -1;
+    }
+}
+
+//NAVIGATION SMALL
+.nav_small {
+    width: 3rem;
+
+    .categories {
+        padding: 0 1rem;
+    }
+    .description {
+        opacity: 0;
+    }
+
+    .btn_logout {
+        svg {
+            transform: scaleX(1);
+        }
+    }
+}

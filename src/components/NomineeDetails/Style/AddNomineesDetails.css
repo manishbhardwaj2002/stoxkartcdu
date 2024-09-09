@@ -1,0 +1,78 @@
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.prefixCss {
+    background-color: #f7f7ff !important;
+}
+
+.prefixCss option {
+  background-color: #f7f7ff !important;
+}
+
+.maxInputStyle {
+  width: 650px !important;
+}
+
+.commonFormMargin {
+  padding-left: 1rem !important;
+}
+
+.commonFormUpMargin {
+  margin-top: 0.5px !important;
+  max-width: 600em !important;
+}
+
+.mobileBasedCss {
+  max-width: 317.22px;
+}
+
+@media only screen and (max-width≥768px) {
+  .mobileBasedCss {
+    max-width: 3px !important;
+  }
+}
+
+.commonbackgroundDialogColor {
+  background: #e4f2ff !important;
+}
+
+.switchCheckbox:checked {
+  background-color: green !important;
+}
+
+.addNomineeButton {
+  width: 25vw;
+  height: 60px;
+  margin-top: 1em;
+  margin-left: 4em;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(174, 176, 190, 0.5);
+  border-radius: 8px;
+  color: #424242;
+  font-size: 1.28rem;
+  cursor: pointer;
+}
+
+.addNomineeButtonModify {
+  width: 25vw;
+  height: 0px;
+  margin-top: 1em;
+  margin-left: 5em;
+  text-align: left;
+  color: rgba(63, 91, 217, 0.4);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-link {
+  text-decoration: none;
+}

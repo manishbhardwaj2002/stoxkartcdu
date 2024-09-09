@@ -1,0 +1,147 @@
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.prefixCss {
+  max-width: 300px !important;
+  background-color: #f7f7ff !important;
+}
+
+.prefixCss option {
+  background-color: #f7f7ff !important;
+}
+
+.maxInputStyle {
+  width: 650px !important;
+}
+
+.commonFormMargin {
+  padding-left: 1rem !important;
+}
+
+.commonFormUpMargin {
+  margin-top: 0.5px !important;
+  max-width: 600em !important;
+}
+
+@media only screen and (max-width: 460px) {
+  .addNomineeButton {
+    width: 70vw !important;
+    margin-top: 4em;
+    margin-left: 0em;
+  }
+  #addNomineeButton1 {
+    margin-left: 0em !important;
+  }
+  .addNomineeButtonModify {
+    width: 70vw !important;
+    margin-top: 4em;
+    margin-left: 0em;
+  }
+  .addNomineeProceedButton {
+    width: 70vw !important;
+    margin-top: 4em;
+    margin-left: 0em;
+  }
+  .button_margin{
+    width: 70vw !important;
+    margin-top: 5em ;
+    margin-left: 4.4em !important;
+  }
+  .removeNomineeDetails {
+    color:red;
+    margin-left:70vw !important
+  }
+}
+.addNomineeButton {
+  width: 25vw;
+  height: 60px;
+  margin-top: 1em;
+  margin-left: 4em;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(174, 176, 190, 0.5);
+  border-radius: 8px;
+  color: #424242;
+  font-size: 1.28rem;
+  cursor: pointer;
+}
+
+.addNomineeButtonModify {
+  width: 25vw;
+  height: 0px;
+  margin-top: 1em;
+  margin-left: 5em;
+  text-align: left;
+  color: rgba(63, 91, 217, 0.4);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.addNomineeProceedButton {
+  width: 25vw ;
+  color: #f7f7ff; 
+  height: 60px;
+  margin-top: 1.2em;
+  margin-left: 4.1em;
+  text-align: center;
+  background: rgba(12, 167, 80, 1) !important;
+  border: 1px solid rgba(174, 176, 190, 0.5) !important;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  /* position: absolute; */
+}
+
+/* .nomineeDialogActionButtons {
+  display: "flex";
+  flex-direction: "column";
+  justify-content: "space-around" !important;
+  /* margin: 10px; */
+/* } */ 
+/* #addNomineeButton1{column
+    margin-left:  !important;
+    margin-top: 1em ;
+} */
+
+.button_margin{
+  width: 30vw;
+  color: #f7f7ff ; 
+  height: 60px;
+  margin-top: 1.2em ;
+  margin-left: 5.8rem ;
+  text-align: center;
+  background: rgba(12, 167, 80, 1) !important;
+  border: 1px solid rgba(174, 176, 190, 0.5) !important;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.inputNewCss{
+  border:1px solid rgba(174, 176, 190, 0.5) !important;
+  background-color: #f7f7ff !important;
+}
+
+.nominee-heading{
+  font-size: 30px !important;
+}
+
+.removeNomineeDetails {
+  color:red;
+  margin-left:25vw
+}
+
+.removeNomineeDetails:hover {
+  color:red;
+  margin-left:25vw
+}
